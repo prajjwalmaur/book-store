@@ -1,0 +1,56 @@
+{
+  "info": {
+    "name": "Book Store API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Books",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/books"
+      }
+    },
+    {
+      "name": "Add New Book",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/books",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Sample Book\",\n  \"author\": \"John Doe\",\n  \"price\": 29.99,\n  \"publishedDate\": \"2023-01-01T00:00:00.000Z\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Update Book",
+      "request": {
+        "method": "PUT",
+        "url": "http://localhost:3000/books/:id",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Book\",\n  \"author\": \"Jane Doe\",\n  \"price\": 39.99,\n  \"publishedDate\": \"2023-02-01T00:00:00.000Z\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Book",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:3000/books/:id"
+      }
+    }
+  ]
+} 
