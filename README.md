@@ -44,6 +44,3 @@ A simple REST API for a Book Store using Node.js, Express, and MongoDB.
 
 ## Postman Collection
 A Postman collection is provided in the `postman` folder. Import it into Postman to test the API endpoints.
-
-## GitHub Repository
-[Link to your GitHub repository](<your-github-repo-url>) 
