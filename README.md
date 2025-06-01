@@ -22,7 +22,7 @@ A simple REST API for a Book Store using Node.js, Express, and MongoDB.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <your-github-repo-url>
+   git clone https://github.com/prajjwalmaur/book-store
    cd book-store-api
    ```
 2. Install dependencies:
